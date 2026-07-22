@@ -10,12 +10,12 @@
     "url": "https://uizze.com"
   },
   "homepage": "https://uizze.com",
-  "repo": "https://github.com/samuelbushi/uizze",
+  "repo": "https://github.com/uizze/uizze",
   "tags": ["creative", "software", "research"],
   "license": "MIT",
   "verified": false,
   "featured": false,
   "install": {
-    "args": ["samuelbushi/uizze", "--skill", "anti-ui-slop"]
+    "args": ["uizze/uizze", "--skill", "anti-ui-slop"]
   }
 }
