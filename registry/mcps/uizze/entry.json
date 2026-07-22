@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "uizze",
+  "type": "mcp",
+  "name": "UIZZE",
+  "tagline": "Give Cline real UI evidence and a hard finish gate before it ships",
+  "description": "Connect Cline to UIZZE's catalogue of 800,000+ real web and iOS screens. Search interface references and flows, create product-specific design contracts, validate implementation manifests, audit rendered output, and reject generic UI before release.",
+  "author": {
+    "name": "UIZZE",
+    "url": "https://uizze.com"
+  },
+  "homepage": "https://uizze.com",
+  "repo": "https://github.com/aislon/uizze-mcp",
+  "tags": ["creative", "software", "research"],
+  "license": "MIT",
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": [
+      "uizze",
+      "--transport",
+      "http",
+      "https://uizze.com/mcp",
+      "--header",
+      "Authorization: Bearer ${UIZZE_AGENT_TOKEN}"
+    ],
+    "env": [
+      {
+        "name": "UIZZE_AGENT_TOKEN",
+        "required": true,
+        "description": "Agent token created in the UIZZE Agent Connector.",
+        "url": "https://uizze.com"
+      }
+    ],
+    "notes": "Create an agent token at UIZZE, set UIZZE_AGENT_TOKEN locally, and never commit it to a repository."
+  }
+}
