@@ -2,36 +2,30 @@
   "$schema": "../../../schemas/mcp.schema.json",
   "id": "uizze",
   "type": "mcp",
-  "name": "UIZZE",
-  "tagline": "Give Cline real UI evidence and a hard finish gate before it ships",
-  "description": "Connect Cline to UIZZE's catalogue of 800,000+ real web and iOS screens. Search interface references and flows, create product-specific design contracts, validate implementation manifests, audit rendered output, and reject generic UI before release.",
+  "name": "UIZZE — Free UI Slop Gate",
+  "tagline": "Give Cline a blunt pre-ship UI slop check",
+  "description": "The free UIZZE preview checks rendered HTML/CSS for generic structure, fake content, inert controls, missing states, default agent palettes, and weak product specificity, then returns concrete fixes. No account or token. The optional full UIZZE MCP adds real UI-reference search, design contracts, validation, and screenshot critique.",
   "author": {
     "name": "UIZZE",
     "url": "https://uizze.com"
   },
   "homepage": "https://uizze.com",
   "repo": "https://github.com/uizze/uizze-mcp",
-  "tags": ["creative", "software", "research"],
+  "tags": [
+    "creative",
+    "software",
+    "research"
+  ],
   "license": "MIT",
   "verified": false,
   "featured": false,
   "install": {
     "args": [
-      "uizze",
+      "uizze-preview",
       "--transport",
       "http",
-      "https://uizze.com/mcp",
-      "--header",
-      "Authorization: Bearer ${UIZZE_AGENT_TOKEN}"
+      "https://uizze.com/mcp/preview"
     ],
-    "env": [
-      {
-        "name": "UIZZE_AGENT_TOKEN",
-        "required": true,
-        "description": "Agent token created in the UIZZE Agent Connector.",
-        "url": "https://uizze.com"
-      }
-    ],
-    "notes": "Create an agent token at UIZZE, set UIZZE_AGENT_TOKEN locally, and never commit it to a repository."
+    "notes": "Free preview: one focused check_ui_slop tool, with no account or token. Connect full UIZZE separately when real UI-reference search or critique is needed."
   }
-}
+}\n
