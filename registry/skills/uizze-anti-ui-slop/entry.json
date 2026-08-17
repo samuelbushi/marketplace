@@ -4,7 +4,7 @@
   "type": "skill",
   "name": "UIZZE — Stop UI Slop",
   "tagline": "Stop Cline from shipping the same generic UI again",
-  "description": "A free UI finish-gate workflow grounded in UIZZE's catalogue of 800,000+ real web and iOS screens. It forces product-specific design contracts, required interaction states, existing design-system reuse, rendered inspection, and a hard pre-ship review instead of accepting interchangeable card grids and happy-path mockups.",
+  "description": "A free UI finish-gate workflow for Cline that forces product-specific design contracts, required interaction states, existing design-system reuse, rendered inspection, and a hard pre-ship review instead of accepting interchangeable card grids and happy-path mockups. The optional full UIZZE MCP adds live UI-reference search across 800,000+ real web and iOS screens, validation, audits, and rendered critique.",
   "author": {
     "name": "UIZZE",
     "url": "https://uizze.com"
